@@ -13,3 +13,5 @@ Census data that i have found:
   * This is not specific to Hyderabad
 
 ## Earth observation data  
+
+This is beyond the scope of the workshop but if you are interested explore the [Google Earth Engine data catalog](https://developers.google.com/earth-engine/datasets)

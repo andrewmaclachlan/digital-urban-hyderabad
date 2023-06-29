@@ -100,14 +100,14 @@
   {
     "objectID": "5_start.html#questions-we-can-ask",
     "href": "5_start.html#questions-we-can-ask",
-    "title": "4  Before we start",
+    "title": "4  Asking questions",
     "section": "4.1 Questions we can ask",
-    "text": "4.1 Questions we can ask\nWe need to suggest how can we incorporate spatial data into our question\nGiven the data sets above we could seek to answer the following questions:\n\nDoes distance to school affect literacy outcomes\nData:\n\nCensus data (literature / illiterate)\nSub district polygons (spatial)\nSchool locations (coordinates provided)\nBuilding outlines (from open street map)\n\nAnalysis:\n\nMake building data to points (polygons to centroids)\nWork out the average distance from each building point to each school per ward / district (whatever the census data is provided at)\nPlot the average distance to school against the literate column\n\n\nAssumptions: * Distance might be Euclidean (as the crow flies) * Data is from different year * Not sure how the census assess literacy ability\n\nDoes the location of public health services appropriately serve the population\nData:\n\nCensus data (count of people) OR\nWorld pop data from a more recent year\nPublic health centers (point data)\nPolygon outlines (e.g. sub districts)\n\nAnalysis:\n\nFor each word pop cell (raster cell) work out the closet public health centre (e.g. direct line)\nCount the number of people assigned to each public health centre\nCompare the number of people served\n\n\nAssumptions: * Different health centres might be larger or small and have more or less staff. How can we adjust for that? Number of staff / population?"
+    "text": "4.1 Questions we can ask\nWe need to suggest how can we incorporate spatial data into our question\nGiven the data sets above we could seek to answer the following questions:\n\nDoes distance to school affect literacy outcomes\nData:\n\nCensus data (literature / illiterate)\nSub district polygons (spatial)\nSchool locations (coordinates provided)\nBuilding outlines (from open street map)\n\nAnalysis:\n\nMake building data to points (polygons to centroids)\nWork out the average distance from each building point to each school per ward / district (whatever the census data is provided at)\nPlot the average distance to school against the literate column\n\nAssumptions:\n\nDistance might be Euclidean (as the crow flies)\nData is from different year\nNot sure how the census assess literacy ability\n\nDoes the location of public health services appropriately serve the population\nData\n\nCensus data (count of people) OR\nWorld pop data from a more recent year\nPublic health centers (point data)\nPolygon outlines (e.g. sub districts)\n\nAnalysis:\n\nFor each word pop cell (raster cell) work out the closet public health centre (e.g. direct line)\nCount the number of people assigned to each public health centre\nCompare the number of people served\n\nAssumptions:\n\nDifferent health centres might be larger or small and have more or less staff. How can we adjust for that? Number of staff / population?"
   },
   {
     "objectID": "5_start.html#your-turn",
     "href": "5_start.html#your-turn",
-    "title": "4  Before we start",
+    "title": "4  Asking questions",
     "section": "4.2 Your turn",
     "text": "4.2 Your turn\nCan you think of a similar question for:\n\nAccessing parks and playgrounds across the city\nHow can we estimate demand for the Annapurna food scheme locations"
   },
@@ -123,6 +123,6 @@
     "href": "6_Otherdata.html#earth-observation-data",
     "title": "5  Other datasets",
     "section": "5.2 Earth observation data",
-    "text": "5.2 Earth observation data"
+    "text": "5.2 Earth observation data\nThis is beyond the scope of the workshop but if you are interested explore the Google Earth Engine data catalog"
   }
 ]

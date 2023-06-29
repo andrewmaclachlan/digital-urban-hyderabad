@@ -1,10 +1,10 @@
+# Asking questions
 
-
-# Before we start
+Before we start asking questions of data...
 
 **Make a table and write down** the data you might want to use:
 
--   What does it show 
+-   What does it show
 -   What does it **not show** or is missing
 -   Does it link to spatial data
 -   Which column links it to spatial data or does it have latitude and longitude (e.g. points)
@@ -12,11 +12,9 @@
 
 ## Questions we can ask
 
-We need to suggest **how can we incorporate spatial data into our
-question**
+We need to suggest **how can we incorporate spatial data into our question**
 
-Given the data sets above we could seek to answer the following
-questions:
+Given the data sets above we could seek to answer the following questions:
 
 -   Does distance to school affect literacy outcomes
 
@@ -30,35 +28,34 @@ questions:
     Analysis:
 
     -   Make building data to points (polygons to centroids)
-    -   Work out the average distance from each building point to each
-        school per ward / district (whatever the census data is provided
-        at)
+    -   Work out the average distance from each building point to each school per ward / district (whatever the census data is provided at)
     -   Plot the average distance to school against the literate column
 
-Assumptions: \* Distance might be Euclidean (as the crow flies) \* Data
-is from different year \* Not sure how the census assess literacy
-ability
+    Assumptions:
 
--   Does the location of public health services appropriately serve the
-    population
+    -   Distance might be Euclidean (as the crow flies)
+    -   Data is from different year
+    -   Not sure how the census assess literacy ability
 
-    Data:
+-   Does the location of public health services appropriately serve the population
 
+    Data
+      
     -   Census data (count of people) OR
     -   World pop data from a more recent year
     -   Public health centers (point data)
     -   Polygon outlines (e.g. sub districts)
 
+
     Analysis:
 
-    -   For each word pop cell (raster cell) work out the closet public
-        health centre (e.g. direct line)
+    -   For each word pop cell (raster cell) work out the closet public     health centre (e.g. direct line)
     -   Count the number of people assigned to each public health centre
     -   Compare the number of people served
 
-Assumptions: \* Different health centres might be larger or small and
-have more or less staff. How can we adjust for that? Number of staff /
-population?
+    Assumptions:
+
+    -   Different health centres might be larger or small and have more or less staff. How can we adjust for that? Number of staff / population?
 
 ## Your turn
 
