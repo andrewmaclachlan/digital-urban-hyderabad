@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Digital urban in workshop",
+    "section": "",
+    "text": "Welcome\nHello  and welcome to the Term 2 module Remotely Sensing Cities and Environments.\nThis website holds the material used to support work the Critical interrogations of the digital urban in India workshop that is being held here at the Indian Institute of Technology Hyderabad on 19 July 2023."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Digital urban in workshop",
+    "section": "",
+    "text": "The Bartlett Centre for Advanced Spatial Analysis, https://twitter.com/andymaclachlan↩︎"
+  },
+  {
+    "objectID": "00-course_info.html#qgis",
+    "href": "00-course_info.html#qgis",
+    "title": "Software installation",
+    "section": "QGIS",
+    "text": "QGIS\nQGIS is an open-source graphic user interface GIS with many community developed add on packages that (or plugins) that provide additional functionality to the software.\nTo get QGIS on your personal machine go to: https://qgis.org/en/site/forusers/download.html\nI install the OSGeo4W version. The nature of open-source means that several programs will rely on each other for features. OSGeo4W tracks all the shared requirements and does not install any duplicates.\nWhen you click through the dialogue boxes you need to search for QGIS in the OSGeo4W setup and click the refresh button so it changes from skip to install….\n\n\n\n\nContinuous and discrete data. Source: GIS Stackexchange"
+  },
+  {
     "objectID": "2_spatial_data.html#spatial-data",
     "href": "2_spatial_data.html#spatial-data",
     "title": "1  Spatial data",
@@ -103,26 +124,5 @@
     "title": "5  Other datasets",
     "section": "5.2 Earth observation data",
     "text": "5.2 Earth observation data"
-  },
-  {
-    "objectID": "00-course_info.html#qgis",
-    "href": "00-course_info.html#qgis",
-    "title": "Software installation",
-    "section": "QGIS",
-    "text": "QGIS\nQGIS is an open-source graphic user interface GIS with many community developed add on packages that (or plugins) that provide additional functionality to the software.\nTo get QGIS on your personal machine go to: https://qgis.org/en/site/forusers/download.html\nI install the OSGeo4W version. The nature of open-source means that several programs will rely on each other for features. OSGeo4W tracks all the shared requirements and does not install any duplicates.\nWhen you click through the dialogue boxes you need to search for QGIS in the OSGeo4W setup and click the refresh button so it changes from skip to install….\n\n\n\n\nContinuous and discrete data. Source: GIS Stackexchange"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Digital urban in workshop",
-    "section": "",
-    "text": "Welcome\nHello  and welcome to the Term 2 module Remotely Sensing Cities and Environments.\nThis website holds the material used to support work the Critical interrogations of the digital urban in India workshop that is being held here at the Indian Institute of Technology Hyderabad on 19 July 2023."
-  },
-  {
-    "objectID": "index.html#footnotes",
-    "href": "index.html#footnotes",
-    "title": "Digital urban in workshop",
-    "section": "",
-    "text": "The Bartlett Centre for Advanced Spatial Analysis, https://twitter.com/andymaclachlan↩︎"
   }
 ]
