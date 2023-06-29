@@ -1,0 +1,68 @@
+
+
+# Before we start
+
+**Make a table and write down** the data you might want to use:
+
+-   What does it show 
+-   What does it **not show** or is missing
+-   Does it link to spatial data
+-   Which column links it to spatial data or does it have latitude and longitude (e.g. points)
+-   What question an we **reasonably** ask of the data
+
+## Questions we can ask
+
+We need to suggest **how can we incorporate spatial data into our
+question**
+
+Given the data sets above we could seek to answer the following
+questions:
+
+-   Does distance to school affect literacy outcomes
+
+    Data:
+
+    -   Census data (literature / illiterate)
+    -   Sub district polygons (spatial)
+    -   School locations (coordinates provided)
+    -   Building outlines (from open street map)
+
+    Analysis:
+
+    -   Make building data to points (polygons to centroids)
+    -   Work out the average distance from each building point to each
+        school per ward / district (whatever the census data is provided
+        at)
+    -   Plot the average distance to school against the literate column
+
+Assumptions: \* Distance might be Euclidean (as the crow flies) \* Data
+is from different year \* Not sure how the census assess literacy
+ability
+
+-   Does the location of public health services appropriately serve the
+    population
+
+    Data:
+
+    -   Census data (count of people) OR
+    -   World pop data from a more recent year
+    -   Public health centers (point data)
+    -   Polygon outlines (e.g. sub districts)
+
+    Analysis:
+
+    -   For each word pop cell (raster cell) work out the closet public
+        health centre (e.g. direct line)
+    -   Count the number of people assigned to each public health centre
+    -   Compare the number of people served
+
+Assumptions: \* Different health centres might be larger or small and
+have more or less staff. How can we adjust for that? Number of staff /
+population?
+
+## Your turn
+
+Can you think of a similar question for:
+
+-   Accessing parks and playgrounds across the city
+-   How can we estimate demand for the Annapurna food scheme locations

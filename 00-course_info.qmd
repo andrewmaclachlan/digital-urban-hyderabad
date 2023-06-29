@@ -1,0 +1,18 @@
+# Software installation {.unnumbered}
+
+This course primarily uses the R data science programming language. We briefly touch upon QGIS to give you a basic foundation in the range of spatial software available, please follow the instructions below before the first practical session to install the software on your local computer if you are planning to use it throughout the course. 
+
+## QGIS {.unnumbered}
+
+QGIS is an open-source graphic user interface GIS with many community developed add on packages that (or plugins) that provide additional functionality to the software.  
+
+To get QGIS on your personal machine go to: https://qgis.org/en/site/forusers/download.html
+
+I install the OSGeo4W version. The nature of open-source means that several programs will rely on each other for features. OSGeo4W tracks all the shared requirements and does not install any duplicates. 
+
+When you click through the dialogue boxes you need to **search for QGIS in the OSGeo4W setup and click the refresh button** so it **changes from skip to install**....
+
+
+```{r echo=FALSE, out.width = "450", fig.align='center', cache=FALSE, fig.cap="Continuous and discrete data. Source: [GIS Stackexchange](https://gis.stackexchange.com/questions/230672/how-to-install-osgeo4w-libraries-in-older-version-of-qgis-2-16)"}
+knitr::include_graphics('general_images/QGIS_install2.png')
+```

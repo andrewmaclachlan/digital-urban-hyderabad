@@ -1,0 +1,15 @@
+# Other datasets
+
+## Census
+
+There are many websites that provide a version of census data. However, it can be challenging to link census data (often a table) to some spatial data (e.g. village or districts)
+
+Census data that i have found:
+
+* [Indian census tables](https://censusindia.gov.in/census.website/data/census-tables)
+  * Note, that from my understanding Telangana was separated from Andhra Pradesh in 2014. This means that the census data here will probably not reflect current boundaries. This is not a *major* issue we just need to ensure that it is reflected in any proposed analysis.
+  
+* [Indian Census data on Kaggle ](https://www.kaggle.com/datasets/danofer/india-census?select=india-districts-census-2011.csv)
+  * This is not specific to Hyderabad
+
+## Earth observation data  

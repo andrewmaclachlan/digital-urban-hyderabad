@@ -1,0 +1,72 @@
+project:
+  type: book
+  output-dir: docs
+
+
+book:
+  title: "Digital urban in workshop"
+  #author: Andy MacLachlan
+#  image: general_images/casa_logo.jpg
+#  downloads: [qmd]
+  #cover-image: general_images/casa_logo.jpg
+  #date: r Sys.Date()
+  #description: "The CASA0023 Remotely Sensing Cities and Environments practical book"
+  navbar:
+    logo: general_images/casa_logo.jpg
+    collapse: true
+    collapse-below: lg
+    background: light
+    #reader-mode: true
+    search: true
+    right:
+      - icon: github
+  sidebar:
+    title: "Digital urban workshop"
+    style: floating
+    reader-mode: true
+  repo-url: https://github.com/andrewmaclachlan/CASA0023
+  repo-actions: [edit, issue]
+#  google-analytics:
+#    tracking-id: "G-5LZK055F2X"
+#    anonymize-ip: true
+    #tools:
+    #- icon: twitter
+    #  href: https://twitter.com
+    #- icon: github
+    #  menu:
+    #    - text: Source Code
+    #      url:  https://code.com
+    #    - text: Report a Bug
+    #      url:  https://bugs.com
+    #search: true
+  #repo-url: https://github.com/jjallaire/hopr/
+  #repo-actions: [edit]
+  #sharing: [twitter, facebook]
+  chapters:
+    - index.qmd
+    - 00-course_info.qmd
+    - 2_spatial_data.qmd
+    - 3_loading_data.qmd
+    - 4_QGIS.qmd
+    - 5_start.qmd
+    - 6_Otherdata.qmd
+
+  favicon: "assets/favicon.ico"	
+  reader-mode: true
+
+
+#bibliography: references.bib
+
+
+format:
+  html:
+    theme:
+        light: [cosmo, flatly]
+        dark: [cosmo, darkly]
+    code-link: true
+
+
+  pdf:
+    documentclass: scrbook
+#editor: visual
+

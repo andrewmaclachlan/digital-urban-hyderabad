@@ -1,0 +1,61 @@
+# Getting the data
+
+The purpose of the workshop is to: 
+
+* Devise a spatial question based on available data
+* Demonstrate how this might be achieved 
+* The task is to explore the data, understand what it shows, see how it can be joined to other datasets (e.g. raw data joined to spatial data) and provide some suggestions for analysis.
+
+In the presentation we want to see:
+
+* An explanation of the question, ideally with reference to local, national or international policy.
+* The data sets that will be used 
+* Critical data reflection - What the datasets represent (and what they don't represent)
+* A methodology suggestion (note, it is not required to do any analysis)
+* What / who the outputs will be useful for
+
+Data can be both spatial and non spatial. The former is some kind of object (often a shapefile) the latter is a dataset file (such as a csv). Typically these files will have a unique ID that we can join them on - such as a district or ward.
+
+## Datasets
+
+* [Open Data City](https://opencity.in/)
+  * Search Hyderabad 
+  * Points for: Schools, health care facilities, parks and playgrounds, toilets, slums, Annapurna meals 
+  * Polygons for: Wards
+  * Non spatial data: Census, Education data (number of places)
+  
+* [Open Street Map](https://download.geofabrik.de/)
+  * Roads
+  * Points of interest (e.g. schools, tourist attractions, shops, health care facilities, restaurants, bakeries)
+  * Buildings
+  * Railways
+  
+* [Population per 1km grid cell](https://hub.worldpop.org/project/categories?id=18)
+  * For a variety of years
+
+**Census data**
+
+I have found a variety of sources that contain census data. Some make it difficult to join the data as there is no matching column. 
+Last year the [Development Data Lab](https://www.devdatalab.org/shrug_download/) complied this data for us! 
+
+You can read more about their work in [their medium article](https://devdatalab.medium.com/open-access-geospatial-data-for-india-b9dceb7196bb)
+
+As **village boundaries can change** between census years it is challenging to compare values. In response they have developed a standard zone called a `shrid` that keeps the boundaries the same across all census years! You can decide what boundary is most appropriate for your question - do you care about past data or is the most recent census data sufficient? 
+
+In the 2011 village data the columns stand for:
+
+* pc11_s_id = state
+* pc11_d_id = district
+* pc11_sd_id = sub district
+* pc11_tv_id = village
+
+Within this site there is:
+
+* Election data
+* Facebook population and estimated wealth
+* 2012-2021 Night time lights (used for monitoring GPD / urban growth)
+* Pollution data (from satellites)
+* Consumption and poverty estimates
+
+  
+

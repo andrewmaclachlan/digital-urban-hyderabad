@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "2_spatial_data.html#spatial-data",
+    "href": "2_spatial_data.html#spatial-data",
+    "title": "1  Spatial data",
+    "section": "\n1.1 Spatial data",
+    "text": "1.1 Spatial data\nGeographic data, geospatial data or geographic information is data that identifies the location of features on Earth. There are two main types of data which are used in GIS applications to represent the real world.\n\nVectors that are composed of points, lines and polygons\nRasters that are grids of cells with individual values…\n\n\n\n\n\nTypes of spatial data. Source: Spatial data models"
+  },
+  {
+    "objectID": "2_spatial_data.html#projections",
+    "href": "2_spatial_data.html#projections",
+    "title": "1  Spatial data",
+    "section": "\n1.2 Projections",
+    "text": "1.2 Projections\nSpatial data is special as it must have a coordinate reference system (CRS) often referred to as a projection.\nThese are mathematical formulas that specify how our data is represented on a map. &gt; How would you represent the globe on a 2D paper map, screen or sphere?\nProjections can either be geographic coordinate reference systems or projected coordinate reference systems. The former treats data as a sphere and the latter as a flat object. You might come across phrases such as a resolution of 5 minutes or a resolution of 30 metres, which can be used to establish what kind of projection system has been used. Let me explain…\nA minute type of resolution (e.g. 5 minute resolution) is a geographic reference system that treats the globe as if it was a sphere divided into 360 equal parts called degrees (which are angular units). Each degree has 60 minutes and each minute has 60 seconds. Arc-seconds of latitude (horizontal lines in the globe figure below) remain almost constant whilst arc-seconds of longitude (vertical lines in the globe figure below) decrease in a trigonometric cosine-based fashion as you move towards the Earth’s poles.\n\n\nLatitude and Longitude. Source: ThoughtCo.\n\nThis causes problems as you increase or decrease latitude the longitudinal lengths alter…For example at the equator (0°, such as Quito) a degree is 111.3 km whereas at 60° (such as Saint Petersburg) a degree is 55.80 km…\nIn contrast a projected coordinate system is defined on a flat, two-dimensional plane (through projecting a spheroid onto a 2D surface) giving it constant lengths, angles and are…\n\n\n\n\n\n\n\n\n\nFigure 1.1: Illustration of vector (point) data in which location of London (the red X) is represented with reference to an origin (the blue circle). The left plot (a) represents a geographic CRS with an origin at 0° longitude and latitude. The right plot (b) represents a projected CRS with an origin located in the sea west of the South West Peninsula. Source: Lovelace et al. (2019) section 2.2\n\n\nKnowing this, if we want to conduct analysis locally (e.g. at a national level) or use metric (e.g. kilometres) measurements we need to be able to change the projection of our data or “reproject” it. Most countries and even states have their own projected coordinate reference system such as British National Grid in the above example…Note how the origin (0,0) is has moved from the centre of the Earth to the bottom South West corner of the UK, which has now been ironed (or flattened) out."
+  },
+  {
+    "objectID": "2_spatial_data.html#questions-we-can-ask",
+    "href": "2_spatial_data.html#questions-we-can-ask",
+    "title": "1  Spatial data",
+    "section": "\n1.3 Questions we can ask",
+    "text": "1.3 Questions we can ask\nThe real benefit of spatial data is that we can see where trends happen….\nExamples of questions include:\n\nAre the pharmacies distributed randomly or do they exhibit some kind of dispersed or clustered pattern?\nWhat factors influence evictions in a city (e.g. New York)?\nAre the values (e.g. income / deprivation) similar (or dissimilar) across the areas of a city?\nWhat are the factors that might lead to variation in Average GCSE (secondary school grades) point scores across the city?\nIs there racial bias in stop question and frisk data?\nWhat population does a hospital / school / social service cover ?\nIf we were to develop a new facility (e.g. hospital, school, pharmacy) where would it reduce demand the most given some candidate sites ?\nWhat factors influence perceived safety in the built envrionment?"
+  },
+  {
+    "objectID": "3_loading_data.html#datasets",
+    "href": "3_loading_data.html#datasets",
+    "title": "2  Getting the data",
+    "section": "2.1 Datasets",
+    "text": "2.1 Datasets\n\nOpen Data City\n\nSearch Hyderabad\nPoints for: Schools, health care facilities, parks and playgrounds, toilets, slums, Annapurna meals\nPolygons for: Wards\nNon spatial data: Census, Education data (number of places)\n\nOpen Street Map\n\nRoads\nPoints of interest (e.g. schools, tourist attractions, shops, health care facilities, restaurants, bakeries)\nBuildings\nRailways\n\nPopulation per 1km grid cell\n\nFor a variety of years\n\n\nCensus data\nI have found a variety of sources that contain census data. Some make it difficult to join the data as there is no matching column. Last year the Development Data Lab complied this data for us!\nYou can read more about their work in their medium article\nAs village boundaries can change between census years it is challenging to compare values. In response they have developed a standard zone called a shrid that keeps the boundaries the same across all census years! You can decide what boundary is most appropriate for your question - do you care about past data or is the most recent census data sufficient?\nIn the 2011 village data the columns stand for:\n\npc11_s_id = state\npc11_d_id = district\npc11_sd_id = sub district\npc11_tv_id = village\n\nWithin this site there is:\n\nElection data\nFacebook population and estimated wealth\n2012-2021 Night time lights (used for monitoring GPD / urban growth)\nPollution data (from satellites)\nConsumption and poverty estimates"
+  },
+  {
+    "objectID": "4_QGIS.html#data",
+    "href": "4_QGIS.html#data",
+    "title": "3  QGIS",
+    "section": "3.1 Data",
+    "text": "3.1 Data\nThe following data is used within this short practical.\n\nOpen Data City schools\nOpen Street Map - points of interest\nWorld pop population (2020)\nData Devevelopment Lab\n\nPC11 Subdistrict Polygons, 2011 Population Census Abstract\n\nOpen Polygons and Spatial Statistics, PC11 Subdistrict Polygons"
+  },
+  {
+    "objectID": "4_QGIS.html#making-a-project",
+    "href": "4_QGIS.html#making-a-project",
+    "title": "3  QGIS",
+    "section": "3.2 Making a project",
+    "text": "3.2 Making a project\nIn QGIS we can make a “project”. The project stores relatively little information. However it will store the file path for each file you load. Say for example we load a shapefile (like we will later), if i create (and save) a project it will know where that file is stored and load it next time i open the project.\nTo create a project: Project (top left tool bar) &gt; Save as."
+  },
+  {
+    "objectID": "4_QGIS.html#using-qgis",
+    "href": "4_QGIS.html#using-qgis",
+    "title": "3  QGIS",
+    "section": "3.3 Using QGIS",
+    "text": "3.3 Using QGIS\n\n3.3.1 Moving around the map\nIn the top tool bar there are a variety of buttons. Two are the most used:\n\nThe white hand: let’s you scroll around the map\nThe blue i with an arrow: let’s you query what value the data has.\n\n\n\n3.3.2 Saving data\nIn the following sections we will be select data and exporting it.\nThere are many ways to export data, but two are often more common:\n\nShapefiles - actually several files that make a shapefile\nGeopackage - a container, like a folder that stores all spatial data. The benefit is that it is stored as a signle file meaning if we want to share our data we just share the 1 file!\n\nFile management is up to you.\nBut to make a geopacakge for this work right click on the Geopackage name &gt; create database. Select no geometry here (as the Geopackage will not have any spatial information, but the files places within it will)"
+  },
+  {
+    "objectID": "4_QGIS.html#adding-spatial-data",
+    "href": "4_QGIS.html#adding-spatial-data",
+    "title": "3  QGIS",
+    "section": "3.4 Adding spatial data",
+    "text": "3.4 Adding spatial data\nYou will be presented with a blank map. To assist us in navigating on the top tool bar select Web &gt; Quick Map Services &gt; OSM &gt; OSM standard\nThis will provide us with a “basemap” it is actually the same as OpenStreetMap but the features are not queryable and it is just an image.\n\n\n\n\n\nNow, let’s add some data. To add a spatial layer (e.g. a shapefile) you can simply drag and drop it into QGIS.\nNote that a shapefile is composed of a variety of files! See the explaination of shapefiles\nFor the purpose of this workshop select the .shp and drag it in.\nIn a similar theme we can also drag and drop in a KML file. Here, i have add the point of interest layer from the OpenStreetMap data (that i downloaded) and the schools data (KML) from Open Data City. Note that we can see the files in the layer tab on the left. If we uncheck a box the layer is removed from the map.\nWe can also right click a layer and zoom to layer to see the full extent of it (here, all the points).\n\n\n\n\n\n\n3.4.1 Setting a cordiante reference system\nThere are two coordinate reference systems to be aware of:\n\nThat of each data layer\nThat of the “map layer” or the “canvas” in QGIS.\n\n\n3.4.1.1 CRS of data\nEach spatial layer will have a coordinate reference system. If we right click on the point of interest layer from OSM &gt; properties &gt; information. We can see that the CRS is EPSG:4326 - WGS84.\n\nIf we do the same for the school data (from Open Data City) we get the same CRS.\nThis is a geographic CRS and we can see that the units are in degrees - so not very helpful if we want to work out distance!\nTo transform the CRS to something more use (in metric units) we can use the reproject layer function.\nFirst, make sure the processing toolbox is on the screen. Processing &gt; Toolbox. The processing tool should appear. Search for Reproject layer. A good one for Hyderabad is 32644.\nFor this example i have transformed:\n\nThe sub districts\nThe OSM points\nThe Open Data City schools\n\n\n\n3.4.1.2 CRS of the map\nIn the bottom right corner of QGIS you will see an EPSG for the map - mine is 4326. QGIS sets this based on the first dataset loaded.\nIf a new dataset is loaded that is different you will get a warning. But QGIS reproejcts on the fly this means that any new data will be shown as if it is in the map CRS.\nNevertheless we should always reproject our data before analysis to a local CRS!\n\n\n\n3.4.2 Adding csv point data\nIf we had a csv file with latitude and longitude as points we can add this as a spatial layer through the data source manager.\n\n\n3.4.3 Adding raster data\nFor raster data we can drag and drop it again! For example download the worldpop 2020 estiamtes for India\nThen drag and drop!\n\n\n\n\n\n\nTip\n\n\n\n\n\nThere are many ways we can use / extract data from a raster file. This is beyond the workshop. But we can convert this to vector (points or polygons) and reproject it if needed."
+  },
+  {
+    "objectID": "4_QGIS.html#filtering",
+    "href": "4_QGIS.html#filtering",
+    "title": "3  QGIS",
+    "section": "3.5 Filtering",
+    "text": "3.5 Filtering\n\n3.5.1 By attributes\nWithin my sub district data, i know that Hyderabad has a district value of 536. However, my sub district data is for the whole if India.\nTo select just the sub district polygons i want. Right click on the sub district layer in the layers tab (left of screen) &gt; open attribute table. At the top of the attribute table there will be a funnel icon, click it.\nYou will then see all the columns of the sub district shapefile and we can enter a filter value…\n\nEnter the value and click select features &gt; close the attribute table.\nGo to the sub district layer &gt; right click &gt; zoom to selection. You should see that the villages within Hyderabad have been selected.\nWe can now export just these features. Right click the sub district layer &gt; export &gt; save selected features as…\nThe new layer will be added to the map.\n\n\n\n\n\n\n\n3.5.2 By location\nIf i now overlay my OpenStreetMap points of interest, it will become quite obvious that the points go beyond our study area.\n\n\n\n\n\nIn order to constrain our points to the Hyderabad sub districts we can select the points that intersect it, through a select by location…\nGo to Vector (top toolbar) &gt; research tools &gt; select by location. We want to select features from the points layer (here the open street maps points) by comparing them to the boundary of the Hyderabad sub districts.\nYou can select what operator to use, intersects is typically the default in most spatial applications..\nOnce this has been run the points within the boundary are selected. However, this has not been saved. If you open the attribute table of the OpenStreetMap points in the top bar of the attribute table it will state selected: 3488. To save our selected data we again need to right click &gt; export &gt; save selected features as"
+  },
+  {
+    "objectID": "4_QGIS.html#joining",
+    "href": "4_QGIS.html#joining",
+    "title": "3  QGIS",
+    "section": "3.6 Joining",
+    "text": "3.6 Joining\nWhilst we have completed some spatial operations we have yet to join our census data to our spatial data.\nHere, i have downloaded the 2011 Population Census Abstract data from the Development Data Lab. This downloads as the folder shurg-td11-csv. On exploring the data (in excel) i see that it contains a sub district ID column.\nDrag in the csv file from the census to QGIS layers\nRight click on our Hyderabad sub districts layer &gt; properties.\nOn the properties window select joins (in the left column).\n\nSelect the join layer as the csv - this is the layer to be joined to our spatial data\nSelect the join field as the sub district ID field from the csv\nSelect the target field as the sub district ID field from our spatial data:\n\n\nOpen the attribute table of our Hyderabad sub districts and you should see that all the census columns are present.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHowever the join is not permanent. To keep this data you must export the file like we have done before!"
+  },
+  {
+    "objectID": "4_QGIS.html#review",
+    "href": "4_QGIS.html#review",
+    "title": "3  QGIS",
+    "section": "3.7 Review",
+    "text": "3.7 Review\nThis has been a brief introduction to QGIS.\nConsider the following:\n\nWhat is a GIS\nHow can we filter our data based on attrbiutes or location\nHow can we join non spatial data to spatial data"
+  },
+  {
+    "objectID": "5_start.html#questions-we-can-ask",
+    "href": "5_start.html#questions-we-can-ask",
+    "title": "4  Before we start",
+    "section": "4.1 Questions we can ask",
+    "text": "4.1 Questions we can ask\nWe need to suggest how can we incorporate spatial data into our question\nGiven the data sets above we could seek to answer the following questions:\n\nDoes distance to school affect literacy outcomes\nData:\n\nCensus data (literature / illiterate)\nSub district polygons (spatial)\nSchool locations (coordinates provided)\nBuilding outlines (from open street map)\n\nAnalysis:\n\nMake building data to points (polygons to centroids)\nWork out the average distance from each building point to each school per ward / district (whatever the census data is provided at)\nPlot the average distance to school against the literate column\n\n\nAssumptions: * Distance might be Euclidean (as the crow flies) * Data is from different year * Not sure how the census assess literacy ability\n\nDoes the location of public health services appropriately serve the population\nData:\n\nCensus data (count of people) OR\nWorld pop data from a more recent year\nPublic health centers (point data)\nPolygon outlines (e.g. sub districts)\n\nAnalysis:\n\nFor each word pop cell (raster cell) work out the closet public health centre (e.g. direct line)\nCount the number of people assigned to each public health centre\nCompare the number of people served\n\n\nAssumptions: * Different health centres might be larger or small and have more or less staff. How can we adjust for that? Number of staff / population?"
+  },
+  {
+    "objectID": "5_start.html#your-turn",
+    "href": "5_start.html#your-turn",
+    "title": "4  Before we start",
+    "section": "4.2 Your turn",
+    "text": "4.2 Your turn\nCan you think of a similar question for:\n\nAccessing parks and playgrounds across the city\nHow can we estimate demand for the Annapurna food scheme locations"
+  },
+  {
+    "objectID": "6_Otherdata.html#census",
+    "href": "6_Otherdata.html#census",
+    "title": "5  Other datasets",
+    "section": "5.1 Census",
+    "text": "5.1 Census\nThere are many websites that provide a version of census data. However, it can be challenging to link census data (often a table) to some spatial data (e.g. village or districts)\nCensus data that i have found:\n\nIndian census tables\n\nNote, that from my understanding Telangana was separated from Andhra Pradesh in 2014. This means that the census data here will probably not reflect current boundaries. This is not a major issue we just need to ensure that it is reflected in any proposed analysis.\n\nIndian Census data on Kaggle\n\nThis is not specific to Hyderabad"
+  },
+  {
+    "objectID": "6_Otherdata.html#earth-observation-data",
+    "href": "6_Otherdata.html#earth-observation-data",
+    "title": "5  Other datasets",
+    "section": "5.2 Earth observation data",
+    "text": "5.2 Earth observation data"
+  },
+  {
+    "objectID": "00-course_info.html#qgis",
+    "href": "00-course_info.html#qgis",
+    "title": "Software installation",
+    "section": "QGIS",
+    "text": "QGIS\nQGIS is an open-source graphic user interface GIS with many community developed add on packages that (or plugins) that provide additional functionality to the software.\nTo get QGIS on your personal machine go to: https://qgis.org/en/site/forusers/download.html\nI install the OSGeo4W version. The nature of open-source means that several programs will rely on each other for features. OSGeo4W tracks all the shared requirements and does not install any duplicates.\nWhen you click through the dialogue boxes you need to search for QGIS in the OSGeo4W setup and click the refresh button so it changes from skip to install….\n\n\n\n\nContinuous and discrete data. Source: GIS Stackexchange"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Digital urban in workshop",
+    "section": "",
+    "text": "Welcome\nHello  and welcome to the Term 2 module Remotely Sensing Cities and Environments.\nThis website holds the material used to support work the Critical interrogations of the digital urban in India workshop that is being held here at the Indian Institute of Technology Hyderabad on 19 July 2023."
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Digital urban in workshop",
+    "section": "",
+    "text": "The Bartlett Centre for Advanced Spatial Analysis, https://twitter.com/andymaclachlan↩︎"
+  }
+]

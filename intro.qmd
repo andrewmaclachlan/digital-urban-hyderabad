@@ -1,0 +1,92 @@
+# Getting started with R
+
+This will be just a **brief overview of how to use the R data science language to get through this workshop**. There is a package for almost everything you can think of in R and it is easy to get overwhelmed.
+
+If you are some kind of masochist, you are welcome to use the bundled R GUI for all of your work. If pain is not your thing, then for this practical (and future practicals) I will assume that you are using RStudio.
+
+1. From the start menu on your computer, find and run RStudio
+
+Once RStudio has opened, the first thing we will do is create a new project – projects enable you to organise your work effectively and store all of the files you create and work with for a particular task. 
+
+1. To create a new project (and this will vary a little depending on the version of RStudio you are using) select File > New Project
+
+1. Select Start a project in a brand new working directory and create a new project in a directory on your computer...
+
+```{r echo=FALSE, out.width = "500px", fig.align='center', cache=FALSE}
+knitr::include_graphics('prac2_images/r_newproject.png') 
+```
+
+My file directory (the second box here) will be different to yours as this is my teaching resources folder. Keep yours simple.
+
+Setting up a project is extremely useful as it lets you easily access your data and files...for example....any ```.csv``` is stored at the **full** file path of...
+
+```{r eval=FALSE, cache=FALSE}
+mycsv <- read_csv("C:/Users/Andy/OneDrive - University College London/Teaching/CASA0005/2020_2021/CASA0005repo/Prac1_data/fly_tipping_borough_edit.csv"")  
+```
+
+However as i've set my R project up in the CASA0005repo folder with different data folders for each week i can just use:
+
+```{r eval=FALSE, cache=FALSE}
+mycsv <- read_csv("Prac1_data/fly_tipping_borough_edit.csv")  
+```
+
+If i had the ```.csv``` file in the same folder as my project i could just use
+
+```{r eval=FALSE, cache=FALSE}
+mycsv <- read_csv("fly_tipping_borough_edit.csv")  
+```
+
+## Packages
+
+R is built on the concept of **packages**, these are collections of similar **functions** that allow us to do certain analysis.
+
+For example, the **readr** package is helps us read in all kinds of data into R. It does this through a selection of functions including:
+
+*  `read_csv()` - this reads in a comma separated file (as shown above)
+*  `read_tsv()` - this reads in a tab separated file (the same as a csv but with tab spacing)
+
+Within a function we specify **arguments** which control how the function should work. In the example above the file path is for the argument file. So it could also be written as:
+
+```{r eval=FALSE, cache=FALSE}
+mycsv <- read_csv(file="fly_tipping_borough_edit.csv")  
+```
+
+In this example we are also saving our csv into an **object**, here i have called it mycsv. 
+
+## Pipes!
+
+In R we often use the syntax (code) `%>%`, this is called **a pipe** and is an operator is part from the magrittr package. magrittr is an entirely new way of thinking about R syntax that clearly expresses a sequence of multiple operations. It is useful to think of the pipe operator as simply meaning “then”. Do this THEN do this THEN do that.
+
+In R version 4.1 there is a new pipe `|>`. It is exactly at the same as `%>%` but means there is no reliance on the magrittr package. The good news is they can mostly be used interchangeably.
+
+```{r echo=FALSE, out.width = "450px", fig.align='center', cache=FALSE, fig.cap="How to use pipes to clean up your R code. Source: [  R for Ecology, 2022](https://www.rforecology.com/post/how-to-use-pipes/)"}
+knitr::include_graphics('prac2_images/pipes.png') 
+```
+
+## Scripts
+
+In R we can organise our code into scripts. There are several different versions of "scripting files" however the all serve a similar purpose. If you click File > New File you will see:
+
+* R script - this just allows code to be saved and run. 
+
+* RMarkdown file - this allows code to be stored in "chunks" and text to outside the chunks, like this website.
+
+* Quarto file - a updated version of RMarkdown that is platform independent. It can be used in all different types of software.
+
+For the purposes of this workshop use select an RMarkdown file...You will see something like this...
+
+![RStudio outline](general_images/RStudio_outline.png)
+
+
+RStudio outline
+Here we have:
+
+* Red box = Scripting area
+* Grey box = Environment, shows data that we have loaded and saved into "objects", like `mycsv` above.
+* Blue box = the files / data that are saved within this project
+* Yellow box = console, this can be used to query data, but the code is not saved.
+
+If you click the knit button you will be asked to save the file. In my case you will see that i have added the code `car <- cars` and it has appeared in the environment window. If you click car in the environment tab it will show the data. This data is loaded with R as an example. 
+
+**Make sure you save you individual files**, the project is just a container and does not need saving.
+
