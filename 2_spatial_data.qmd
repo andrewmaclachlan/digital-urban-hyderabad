@@ -2,47 +2,37 @@
 
 ## Spatial data
 
-Geographic data, geospatial data or geographic information is data that identifies the location of features on Earth. There are two main types of data which are used in GIS applications to represent the real world. 
+Geographic data, geospatial data or geographic information is data that identifies the location of features on Earth. There are two main types of data which are used in GIS applications to represent the real world.
 
-* Vectors that are composed of points, lines and polygons 
+-   Vectors that are composed of points, lines and polygons
 
-* Rasters that are grids of cells with individual values...
+-   Rasters that are grids of cells with individual values...
 
-
-```{r echo=FALSE, out.width = "300pt", fig.align='center', cache=FALSE, fig.cap="Types of spatial data. Source: [Spatial data models](https://planet.uwc.ac.za/nisl/gis/web_page/page_15.htm)"}
-knitr::include_graphics('general_images/rasvec.jpg') 
-```
-
-
+![Types of spatial data. Source: [Spatial data models](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)](general_images/rasvec.jpg){fig-align="center" width="233"}
 
 ## Projections
 
 Spatial data is special as it must have a **coordinate reference system (CRS)** often referred to as a **projection**.
 
-These are mathematical formulas that specify how our data is represented on a map. 
-> How would you represent the globe on a 2D paper map, screen or sphere?
+These are mathematical formulas that specify how our data is represented on a map. \> How would you represent the globe on a 2D paper map, screen or sphere?
 
 Projections can either be geographic coordinate reference systems or projected coordinate reference systems. The former treats data as a sphere and the latter as a flat object. You might come across phrases such as a resolution of 5 minutes or a resolution of 30 metres, which can be used to establish what kind of projection system has been used. Let me explain...
 
-A minute type of resolution (e.g. 5 minute resolution) is a geographic reference system that treats the globe as if it was a sphere divided into 360 equal parts called degrees (which are angular units). Each degree has 60 minutes and each minute has 60 seconds. Arc-seconds of latitude (horizontal lines in the globe figure below) remain almost constant whilst arc-seconds of longitude (vertical lines in the globe figure below) decrease in a trigonometric cosine-based fashion as you move towards the Earth’s poles.
+A minute type of resolution (e.g. 5 minute resolution) is a geographic reference system that treats the globe as if it was a sphere divided into 360 equal parts called degrees (which are angular units). Each degree has 60 minutes and each minute has 60 seconds. Arc-seconds of latitude (horizontal lines in the globe figure below) remain almost constant whilst arc-seconds of longitude (vertical lines in the globe figure below) decrease in a trigonometric cosine-based fashion as you move towards the Earth's poles.
 
+![Latitude and Longitude. Source: [ThoughtCo.](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)](general_images/arcseconds.jpg){fig-align="center" width="482"}
 
-![Latitude and Longitude. Source: [ThoughtCo.](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)](general_images/arcseconds.jpg)
-
-
-This causes problems as you increase or decrease latitude the longitudinal lengths alter…For example at the equator (0°, such as Quito) a degree is 111.3 km whereas at 60° (such as Saint Petersburg) a degree is 55.80 km...
+This causes problems as you increase or decrease latitude the longitudinal lengths alter...For example at the equator (0°, such as Quito) a degree is 111.3 km whereas at 60° (such as Saint Petersburg) a degree is 55.80 km...
 
 In contrast a projected coordinate system is defined on a flat, two-dimensional plane (through projecting a spheroid onto a 2D surface) giving it constant lengths, angles and are...
 
-::: {#fig-elephants layout-ncol=2}
-
+::: {#fig-elephants layout-ncol="2"}
 ![](general_images/vector_lonlat.png)
 
 ![](general_images/vector_projected.png)
 
 Illustration of vector (point) data in which location of London (the red X) is represented with reference to an origin (the blue circle). The left plot (a) represents a geographic CRS with an origin at 0° longitude and latitude. The right plot (b) represents a projected CRS with an origin located in the sea west of the South West Peninsula. Source: [Lovelace et al. (2019) section 2.2](https://geocompr.robinlovelace.net/spatial-class.html)
 :::
-
 
 Knowing this, if we want to conduct analysis locally (e.g. at a national level) or use metric (e.g. kilometres) measurements we need to be able to change the projection of our data or "reproject" it. Most countries and even states have their own projected coordinate reference system such as British National Grid in the above example...Note how the origin (0,0) is has moved from the centre of the Earth to the bottom South West corner of the UK, which has now been ironed (or flattened) out.
 
@@ -52,25 +42,18 @@ The real benefit of spatial data is that we can see **where trends happen**....
 
 Examples of questions include:
 
-* Are the pharmacies distributed randomly or do they exhibit some kind of dispersed or clustered pattern?
+-   Are the pharmacies distributed randomly or do they exhibit some kind of dispersed or clustered pattern?
 
-* What factors influence evictions in a city (e.g. New York)?
+-   What factors influence evictions in a city (e.g. New York)?
 
-* Are the values (e.g. income / deprivation) similar (or dissimilar) across the areas of a city?
+-   Are the values (e.g. income / deprivation) similar (or dissimilar) across the areas of a city?
 
-* What are the factors that might lead to variation in Average GCSE (secondary school grades) point scores across the city?
+-   What are the factors that might lead to variation in Average GCSE (secondary school grades) point scores across the city?
 
-* Is there racial bias in stop question and frisk data?
+-   Is there racial bias in stop question and frisk data?
 
-* What population does a hospital / school / social service cover ?
+-   What population does a hospital / school / social service cover ?
 
-* If we were to develop a new facility (e.g. hospital, school, pharmacy) where would it reduce demand the most given some candidate sites ?
+-   If we were to develop a new facility (e.g. hospital, school, pharmacy) where would it reduce demand the most given some candidate sites ?
 
-* What factors influence perceived safety in the built envrionment?
-
-
-
-
-
-
-
+-   What factors influence perceived safety in the built envrionment?

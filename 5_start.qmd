@@ -40,16 +40,15 @@ Given the data sets above we could seek to answer the following questions:
 -   Does the location of public health services appropriately serve the population
 
     Data
-      
+
     -   Census data (count of people) OR
     -   World pop data from a more recent year
     -   Public health centers (point data)
     -   Polygon outlines (e.g. sub districts)
 
-
     Analysis:
 
-    -   For each word pop cell (raster cell) work out the closet public     health centre (e.g. direct line)
+    -   For each word pop cell (raster cell) work out the closet public health centre (e.g. direct line)
     -   Count the number of people assigned to each public health centre
     -   Compare the number of people served
 

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Digital urban workshop - 1&nbsp; Spatial data</title>
 <style>
 code{white-space: pre-wrap;}
@@ -18,6 +21,7 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
+
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -39,7 +43,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -58,14 +63,20 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+
+
 </head>
+
 <body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./general_images/casa_logo.jpg" alt="" class="navbar-logo"></a>
+    <img src="./general_images/casa_logo.jpg" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Digital urban workshop</span>
     </a>
@@ -75,9 +86,10 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto"></ul>
-<div class="quarto-navbar-tools tools-wide">
-    <a href="https://github.com/andrewmaclachlan/CASA0023" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/andrewmaclachlan/digital-urban-hyderabad" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -87,7 +99,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
@@ -98,16 +112,20 @@ ul.task-list li input[type="checkbox"] {
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="mt-2 flex-shrink-0 align-items-center">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
@@ -150,20 +168,26 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#spatial-data" id="toc-spatial-data" class="nav-link active" data-scroll-target="#spatial-data"><span class="header-section-number">1.1</span> Spatial data</a></li>
+  <li><a href="#spatial-data" id="toc-spatial-data" class="nav-link active" data-scroll-target="#spatial-data"><span class="header-section-number">1.1</span> Spatial data</a></li>
   <li><a href="#projections" id="toc-projections" class="nav-link" data-scroll-target="#projections"><span class="header-section-number">1.2</span> Projections</a></li>
   <li><a href="#questions-we-can-ask" id="toc-questions-we-can-ask" class="nav-link" data-scroll-target="#questions-we-can-ask"><span class="header-section-number">1.3</span> Questions we can ask</a></li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/andrewmaclachlan/CASA0023/edit/main/2_spatial_data.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/andrewmaclachlan/CASA0023/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/andrewmaclachlan/digital-urban-hyderabad/edit/main/2_spatial_data.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/andrewmaclachlan/digital-urban-hyderabad/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title"><span id="spatial-data" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Spatial data</span></span></h1>
 </div>
 
@@ -177,35 +201,39 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-</header><section id="spatial-data" class="level2" data-number="1.1"><h2 data-number="1.1" class="anchored" data-anchor-id="spatial-data">
-<span class="header-section-number">1.1</span> Spatial data</h2>
+</header>
+
+<section id="spatial-data" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="spatial-data"><span class="header-section-number">1.1</span> Spatial data</h2>
 <p>Geographic data, geospatial data or geographic information is data that identifies the location of features on Earth. There are two main types of data which are used in GIS applications to represent the real world.</p>
 <ul>
 <li><p>Vectors that are composed of points, lines and polygons</p></li>
 <li><p>Rasters that are grids of cells with individual values…</p></li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="general_images/rasvec.jpg" class="img-fluid figure-img" style="width:4.16667in"></p>
-<figcaption class="figure-caption">Types of spatial data. Source: <a href="https://planet.uwc.ac.za/nisl/gis/web_page/page_15.htm">Spatial data models</a></figcaption></figure>
+<figure class="figure">
+<p><img src="general_images/rasvec.jpg" class="img-fluid figure-img" width="233"></p>
+<figcaption class="figure-caption">Types of spatial data. Source: <a href="https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616">Spatial data models</a></figcaption>
+</figure>
 </div>
-</div>
-</div>
-</section><section id="projections" class="level2" data-number="1.2"><h2 data-number="1.2" class="anchored" data-anchor-id="projections">
-<span class="header-section-number">1.2</span> Projections</h2>
+</section>
+<section id="projections" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="projections"><span class="header-section-number">1.2</span> Projections</h2>
 <p>Spatial data is special as it must have a <strong>coordinate reference system (CRS)</strong> often referred to as a <strong>projection</strong>.</p>
 <p>These are mathematical formulas that specify how our data is represented on a map. &gt; How would you represent the globe on a 2D paper map, screen or sphere?</p>
 <p>Projections can either be geographic coordinate reference systems or projected coordinate reference systems. The former treats data as a sphere and the latter as a flat object. You might come across phrases such as a resolution of 5 minutes or a resolution of 30 metres, which can be used to establish what kind of projection system has been used. Let me explain…</p>
 <p>A minute type of resolution (e.g.&nbsp;5 minute resolution) is a geographic reference system that treats the globe as if it was a sphere divided into 360 equal parts called degrees (which are angular units). Each degree has 60 minutes and each minute has 60 seconds. Arc-seconds of latitude (horizontal lines in the globe figure below) remain almost constant whilst arc-seconds of longitude (vertical lines in the globe figure below) decrease in a trigonometric cosine-based fashion as you move towards the Earth’s poles.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="general_images/arcseconds.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Latitude and Longitude. Source: <a href="https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616">ThoughtCo.</a></figcaption></figure>
+<figure class="figure">
+<p><img src="general_images/arcseconds.jpg" class="img-fluid figure-img" width="482"></p>
+<figcaption class="figure-caption">Latitude and Longitude. Source: <a href="https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616">ThoughtCo.</a></figcaption>
+</figure>
 </div>
 <p>This causes problems as you increase or decrease latitude the longitudinal lengths alter…For example at the equator (0°, such as Quito) a degree is 111.3 km whereas at 60° (such as Saint Petersburg) a degree is 55.80 km…</p>
 <p>In contrast a projected coordinate system is defined on a flat, two-dimensional plane (through projecting a spheroid onto a 2D surface) giving it constant lengths, angles and are…</p>
 <div id="fig-elephants" class="quarto-layout-panel">
-<figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="general_images/vector_lonlat.png" class="img-fluid figure-img"></p>
 </div>
@@ -217,8 +245,9 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Knowing this, if we want to conduct analysis locally (e.g.&nbsp;at a national level) or use metric (e.g.&nbsp;kilometres) measurements we need to be able to change the projection of our data or “reproject” it. Most countries and even states have their own projected coordinate reference system such as British National Grid in the above example…Note how the origin (0,0) is has moved from the centre of the Earth to the bottom South West corner of the UK, which has now been ironed (or flattened) out.</p>
-</section><section id="questions-we-can-ask" class="level2" data-number="1.3"><h2 data-number="1.3" class="anchored" data-anchor-id="questions-we-can-ask">
-<span class="header-section-number">1.3</span> Questions we can ask</h2>
+</section>
+<section id="questions-we-can-ask" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="questions-we-can-ask"><span class="header-section-number">1.3</span> Questions we can ask</h2>
 <p>The real benefit of spatial data is that we can see <strong>where trends happen</strong>….</p>
 <p>Examples of questions include:</p>
 <ul>
@@ -233,7 +262,10 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -580,7 +612,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="./00-course_info.html" class="pagination-link">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Software installation</span>
       </a>          
