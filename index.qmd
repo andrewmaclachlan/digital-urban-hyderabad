@@ -15,7 +15,9 @@ This website <a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_im
 library(fontawesome)
 ```
 
-| Session                                                |                                             Material                                             |
-|:-----------------|:----------------------------------------------------:|
+<br/>
+
+| Session                                                    |                                             Material                                             |
+|:-----------|:---------------------------------------------------:|
 | **Lecture.** Pedagogic Challenges 2: Urban Systems Science |     [`r fa("person-chalkboard")`](https://andrewmaclachlan.github.io/CASA0023-lecture-1/#1)      |
 | **Workshop.** Urban System Science Applications            | [`r fa("code")`](https://andrewmaclachlan.github.io/digital-urban-hyderabad/2_spatial_data.html) |
