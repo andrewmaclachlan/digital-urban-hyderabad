@@ -4,11 +4,18 @@ Andy MacLachlan[^index-1]
 
 ```{r}
 ```
+
 Last updated: `r Sys.Date()`
 
 # Welcome {.unnumbered}
 
-Hello <a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg" alt="" width="120" align="right" style="margin: 0 1em 0 1em"/></a> and welcome to the Term 2 module Remotely Sensing Cities and Environments.
+This website <a href="https://www.ucl.ac.uk/bartlett/casa/"><img src="general_images/casa_logo.jpg" width="120" align="right" style="margin: 0 1em 0 1em"/></a> holds the material used to support the **Critical interrogations of the digital urban** in India workshop that is being held at the Indian Institute of Technology Hyderabad on 19 July 2023.
 
-This website holds the material used to support work the Critical interrogations of the digital urban in India workshop that is being held here at the Indian Institute of Technology Hyderabad on 19 July 2023.
+```{r load_packages, message=FALSE, warning=FALSE, include=FALSE}
+library(fontawesome)
+```
 
+|  Session  |                                        Material                                         |
+|:---------------:|:-----------------------------------------------------:|
+| Lecture:  | [`r fa("person-chalkboard")`](https://andrewmaclachlan.github.io/CASA0023-lecture-1/#1) |
+| Workshop: |        [`r fa("code")`](https://andrewmaclachlan.github.io/digital-urban-hyderabad/2_spatial_data.html)         |
