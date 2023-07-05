@@ -27,7 +27,7 @@ Projections can either be geographic coordinate reference systems or projected c
 A minute type of resolution (e.g. 5 minute resolution) is a geographic reference system that treats the globe as if it was a sphere divided into 360 equal parts called degrees (which are angular units). Each degree has 60 minutes and each minute has 60 seconds. Arc-seconds of latitude (horizontal lines in the globe figure below) remain almost constant whilst arc-seconds of longitude (vertical lines in the globe figure below) decrease in a trigonometric cosine-based fashion as you move towards the Earth’s poles.
 
 
-![Latitude and Longitude. Source: [ThoughtCo.](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)](prac3_images/arcseconds.jpg)
+![Latitude and Longitude. Source: [ThoughtCo.](https://www.thoughtco.com/degree-of-latitude-and-longitude-distance-4070616)](general_images/arcseconds.jpg)
 
 
 This causes problems as you increase or decrease latitude the longitudinal lengths alter…For example at the equator (0°, such as Quito) a degree is 111.3 km whereas at 60° (such as Saint Petersburg) a degree is 55.80 km...
