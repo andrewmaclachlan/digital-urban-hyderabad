@@ -19,5 +19,5 @@ library(fontawesome)
 
 | Session                                                    |                                             Material                                             |
 |:-----------|:---------------------------------------------------:|
-| **Lecture.** Pedagogic Challenges 2: Urban Systems Science |     [`r fa("person-chalkboard")`](https://andrewmaclachlan.github.io/CASA0023-lecture-1/#1)      |
+| **Lecture.** Pedagogic Challenges 2: Urban Systems Science |     [`r fa("person-chalkboard")`](https://andrewmaclachlan.github.io/digital-urban-hyderabad-lecture/)      |
 | **Workshop.** Urban System Science Applications            | [`r fa("code")`](https://andrewmaclachlan.github.io/digital-urban-hyderabad/2_spatial_data.html) |
