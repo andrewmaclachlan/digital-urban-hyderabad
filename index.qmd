@@ -17,6 +17,11 @@ library(fontawesome)
 
 <br/>
 
+<br/>
+
+
+<br/>
+
 | Session                                                    |                                             Material                                             |
 |:-----------|:---------------------------------------------------:|
 | **Lecture.** Pedagogic Challenges 2: Urban Systems Science |     [`r fa("person-chalkboard")`](https://andrewmaclachlan.github.io/digital-urban-hyderabad-lecture/)      |
