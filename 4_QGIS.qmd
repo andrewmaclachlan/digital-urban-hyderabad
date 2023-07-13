@@ -12,7 +12,7 @@ The following data is used within this short practical.
 -   [Open Street Map](https://download.geofabrik.de/) - points of interest
 -   [World pop population (2020)](https://hub.worldpop.org/geodata/summary?id=49804)
 -   [Data Devevelopment Lab](https://www.devdatalab.org/shrug_download/)
-    -   PC11 Subdistrict Polygons, 2011 Population Census Abstract\
+    -   Population Census (9), 2011 Population Census Abstract\
     -   Open Polygons and Spatial Statistics, PC11 Subdistrict Polygons
 
 ## Making a project
@@ -53,7 +53,7 @@ This will provide us with a "basemap" it is actually the same as OpenStreetMap b
 
 ![](general_images/basemap.png){fig-align="center" width="539"}
 
-Now, let's add some data. To add a spatial layer (e.g. a shapefile) you can simply drag and drop it into QGIS.
+Now, let's add some data. To add a spatial layer (e.g. a shapefile) you can simply drag and drop it into QGIS. Find any shapefile (.shp) within the data and drag it in. Note you will need to unzip the zipped files. E.g. add the gis_osm_pois_free_1 or any other shapefile from the Open Street Map data
 
 **Note** that a shapefile is composed of a variety of files! See the [explaination of shapefiles](https://andrewmaclachlan.github.io/CASA0005repo/geographic-information.html#shapefiles)
 
